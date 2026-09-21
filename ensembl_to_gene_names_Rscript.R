@@ -11,11 +11,15 @@ library(org.Mm.eg.db)
 # We will need this so we can use the pipe: %>%
 library(magrittr)
 
+#install.packages("here")
+library(here)
+data_dir <- here::here("data", "SRP082327")
+
 #Read in metadata TSV file
-metadata <- readr::read_tsv("C:/Jasmine/UF Courses/FALL 2026/CGS4144/project/data/SRP082327/metadata_SRP082327.tsv")
+metadata <- readr::read_tsv(file.path(data_dir, "metadata_SRP082327.tsv"))
 
 # Read in data TSV file
-expression_df <- readr::read_tsv("C:/Jasmine/UF Courses/FALL 2026/CGS4144/project/data/SRP082327/SRP082327.tsv") %>%
+expression_df <- readr::read_tsv(file.path(data_dir, "SRP082327.tsv")) %>%
   # Tuck away the Gene ID column as row names
   tibble::column_to_rownames("Gene")
 
@@ -77,15 +81,16 @@ final_mapped_df <- final_mapped_df %>%
     mean_expression = rowMeans(dplyr::select(., -Symbol), na.rm = TRUE)
   )
 
-# For each Symbol, keep only the row with the highest mean expression
+# For each Symbol, keep only the row with the highest mean expression AND round values
 collapsed_df <- final_mapped_df %>%
   dplyr::group_by(Symbol) %>%
   dplyr::slice_max(order_by = mean_expression, n = 1, with_ties = FALSE) %>%
   dplyr::ungroup() %>%
-  dplyr::select(-mean_expression)  # drop the helper column now that we're done
+  dplyr::select(-mean_expression) %>%  # drop the helper column now that we're done
+  dplyr::mutate(across(where(is.numeric), ~ round(.x, 2)))
 
 # Confirm no more duplicates
-sum(duplicated(collapsed_df$Symbol))  # should be 0
+sum(duplicated(collapsed_df$Symbol))  # should be 0s
 
 # Now Symbol is unique - safe to use as row names for downstream tools like DESeq2
 final_matrix <- collapsed_df %>%
@@ -95,7 +100,6 @@ head(final_matrix)
 
 final_matrix %>%
   tibble::rownames_to_column("Symbol") %>%
-  readr::write_tsv(file.path("C:/Jasmine/UF Courses/FALL 2026/CGS4144/project/data/SRP082327", 
+  readr::write_tsv(file.path(here::here("data", "SRP082327"), 
                              "SRP082327_gene_symbols_collapsed.tsv"))
-
 
