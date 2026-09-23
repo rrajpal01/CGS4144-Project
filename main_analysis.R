@@ -128,3 +128,117 @@ p_umap <- ggplot(umap_df, aes(x = UMAP1, y = UMAP2, color = Age)) +
     color = "Age Group"
   )
 print(p_umap)
+
+#Part 3
+library(limma)
+library(ggplot2)
+library(org.Mm.eg.db)
+
+#Two Age Groups
+target_samples <- metadata$refinebio_age %in% c("2", "12")
+log_counts_sub <- log_counts[, target_samples]
+meta_sub <- metadata[target_samples, ]
+group <- factor(meta_sub$refinebio_age, levels = c("2", "12"))
+design <- model.matrix(~ group)
+
+#Fit Linear Model with Limma
+fit <- lmFit(log_counts_sub, design)
+fit <- eBayes(fit)
+
+#Differential Expression
+res_df <- topTable(fit, coef = 2, number = Inf, adjust.method = "BH")
+
+#Store Feature Names
+res_df$gene_symbol <- rownames(res_df)
+
+#Gene Name Column
+res_df$gene_name <- NA
+
+#Map
+symbols_in_df <- res_df$gene_symbol[!grepl("^ENSMUSG", res_df$gene_symbol)]
+valid_symbols <- keys(org.Mm.eg.db, keytype = "SYMBOL")
+matching_symbols <- intersect(symbols_in_df, valid_symbols)
+
+if (length(matching_symbols) > 0) {
+  name_map_from_symbol <- mapIds(
+    org.Mm.eg.db,
+    keys = matching_symbols,
+    column = "GENENAME",
+    keytype = "SYMBOL",
+    multiVals = "first"
+  )
+  res_df$gene_name <- name_map_from_symbol[res_df$gene_symbol]
+}
+
+ensembl_in_df <- sub("\\..*", "", res_df$gene_symbol[grepl("^ENSMUSG", res_df$gene_symbol)])
+valid_ensembl <- keys(org.Mm.eg.db, keytype = "ENSEMBL")
+matching_ensembl <- intersect(ensembl_in_df, valid_ensembl)
+
+if (length(matching_ensembl) > 0) {
+  name_map_from_ensembl <- mapIds(
+    org.Mm.eg.db,
+    keys = matching_ensembl,
+    column = "GENENAME",
+    keytype = "ENSEMBL",
+    multiVals = "first"
+  )
+  
+  symbol_map_from_ensembl <- mapIds(
+    org.Mm.eg.db,
+    keys = matching_ensembl,
+    column = "SYMBOL",
+    keytype = "ENSEMBL",
+    multiVals = "first"
+  )
+  
+  unmapped_mask <- grepl("^ENSMUSG", res_df$gene_symbol)
+  clean_unmapped <- sub("\\..*", "", res_df$gene_symbol[unmapped_mask])
+  
+  updated_names <- name_map_from_ensembl[clean_unmapped]
+  updated_symbols <- symbol_map_from_ensembl[clean_unmapped]
+  
+  res_df$gene_name[unmapped_mask] <- ifelse(is.na(updated_names), res_df$gene_name[unmapped_mask], updated_names)
+  res_df$gene_symbol[unmapped_mask] <- ifelse(is.na(updated_symbols), res_df$gene_symbol[unmapped_mask], updated_symbols)
+}
+
+#N/A Gene Names
+res_df$gene_name[is.na(res_df$gene_name)] <- "Unknown / Unannotated"
+
+# Rename columns to standard DEG format
+colnames(res_df)[colnames(res_df) == "logFC"] <- "log2FoldChange"
+colnames(res_df)[colnames(res_df) == "P.Value"] <- "pvalue"
+colnames(res_df)[colnames(res_df) == "adj.P.Val"] <- "padj"
+
+#Sort
+res_df <- res_df[order(res_df$padj), ]
+
+#Clean
+res_df <- res_df[, c("gene_symbol", "gene_name", "log2FoldChange", "AveExpr", "t", "pvalue", "padj", "B")]
+
+#Save CSV
+if (!dir.exists("results")) dir.create("results")
+
+write.csv(res_df, file = "results/full_differential_expression_results.csv", row.names = FALSE)
+
+top50_degs <- head(res_df, 50)
+write.csv(top50_degs, file = "results/top50_differentially_expressed_genes.csv", row.names = FALSE)
+
+#Volcano Plot
+res_df$diffexpressed <- "NO"
+res_df$diffexpressed[res_df$log2FoldChange > 1 & res_df$padj < 0.05] <- "UP"
+res_df$diffexpressed[res_df$log2FoldChange < -1 & res_df$padj < 0.05] <- "DOWN"
+
+volcano_p <- ggplot(data = res_df, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed)) +
+  geom_point(alpha = 0.6, size = 1.5) +
+  scale_color_manual(values = c("DOWN" = "#2b5c8f", "NO" = "grey", "UP" = "#e76f51")) +
+  geom_vline(xintercept = c(-1, 1), col = "black", linetype = "dashed") +
+  geom_hline(yintercept = -log10(0.05), col = "black", linetype = "dashed") +
+  theme_minimal() +
+  labs(
+    title = "Volcano Plot: 2 Years vs 12 Weeks",
+    subtitle = "Differential Expression Analysis (limma)",
+    x = "Log2 Fold Change",
+    y = "-Log10 P-Value",
+    color = "Expression Status"
+  )
+print(volcano_p)
