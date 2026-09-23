@@ -242,3 +242,73 @@ volcano_p <- ggplot(data = res_df, aes(x = log2FoldChange, y = -log10(pvalue), c
     color = "Expression Status"
   )
 print(volcano_p)
+
+#Part 4
+library(pheatmap)
+
+#Filter DEGs
+sig_genes_df <- subset(res_df, padj < 0.05 & abs(log2FoldChange) > 1)
+
+#Sort by p-value
+sig_genes_df <- sig_genes_df[order(sig_genes_df$padj), ]
+
+#Take Top 50 DEGs
+top_deg_count <- min(50, nrow(sig_genes_df))
+sig_genes_top <- sig_genes_df[1:top_deg_count, ]
+
+#Extract Expression Matrix
+heatmap_matrix <- log_counts_sub[rownames(log_counts_sub) %in% rownames(sig_genes_top), ]
+
+#Gene Symbols as Row Names
+if ("gene_symbol" %in% colnames(sig_genes_top)) {
+  matched_symbols <- sig_genes_top$gene_symbol[match(rownames(heatmap_matrix), rownames(sig_genes_top))]
+  rownames(heatmap_matrix) <- make.unique(as.character(matched_symbols))
+}
+
+#Sample Annotation Sidebar
+annotation_col <- data.frame(
+  Age_Group = factor(meta_sub$refinebio_age, levels = c("2", "12"))
+)
+rownames(annotation_col) <- colnames(heatmap_matrix)
+
+#Color
+ann_colors <- list(
+  Age_Group = c("2" = "#2b5c8f", "12" = "#e76f51")
+)
+
+#Heatmap
+if (!dir.exists("results")) dir.create("results")
+
+#Save PDF
+pdf("results/significant_genes_heatmap.pdf", width = 8, height = 10)
+pheatmap(
+  heatmap_matrix,
+  scale = "row",
+  annotation_col = annotation_col,
+  annotation_colors = ann_colors,
+  show_colnames = FALSE,             
+  show_rownames = TRUE,              
+  fontsize_row = 8,                 
+  clustering_distance_rows = "euclidean",
+  clustering_distance_cols = "euclidean",
+  clustering_method = "complete",
+  main = paste("Heatmap of Top", top_deg_count, "Significant DEGs (2 Years vs 12 Weeks)")
+)
+dev.off()
+
+#Save PNG
+png("results/significant_genes_heatmap.png", width = 900, height = 1100, res = 130)
+pheatmap(
+  heatmap_matrix,
+  scale = "row",
+  annotation_col = annotation_col,
+  annotation_colors = ann_colors,
+  show_colnames = FALSE,
+  show_rownames = TRUE,
+  fontsize_row = 8,
+  clustering_distance_rows = "euclidean",
+  clustering_distance_cols = "euclidean",
+  clustering_method = "complete",
+  main = paste("Heatmap of Top", top_deg_count, "Significant DEGs (2 Years vs 12 Weeks)")
+)
+dev.off()
