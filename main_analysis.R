@@ -521,3 +521,55 @@ if (!is.null(gost_res$result)) {
   p_gost <- gostplot(gost_res, capped = TRUE, interactive = FALSE)
   ggsave("results/gprofiler2_gostplot.png", plot = p_gost, width = 9, height = 6)
 }
+
+# Part 6
+# Read Generated Enrichment Results
+files_to_read <- list.files("results", pattern = "^enrichment_.*\\.csv$", full.names = TRUE)
+
+all_methods_list <- list()
+
+for (f in files_to_read) {
+  df_in <- read.csv(f, stringsAsFactors = FALSE)
+  if (nrow(df_in) > 0) {
+    all_methods_list[[df_in$Method[1]]] <- df_in
+  }
+}
+
+#Total Number of Methods Tested
+total_methods_count <- length(all_methods_list)
+
+#Unique Term IDs
+all_terms_df <- do.call(rbind, lapply(all_methods_list, function(x) {
+  x[, c("Term_ID", "Term_Description")]
+})) %>% distinct(Term_ID, .keep_all = TRUE)
+
+combined_wide <- all_terms_df
+
+for (method_name in names(all_methods_list)) {
+  m_df <- all_methods_list[[method_name]]
+  m_sub <- m_df %>%
+    select(Term_ID, p_value, Significant) %>%
+    rename(
+      !!paste0(method_name, "_pvalue") := p_value,
+      !!paste0(method_name, "_sig_count") := Significant
+    )
+  
+  combined_wide <- left_join(combined_wide, m_sub, by = "Term_ID")
+}
+
+#Summary Columns
+p_col_names <- colnames(combined_wide)[grepl("_pvalue$", colnames(combined_wide))]
+
+combined_wide <- combined_wide %>%
+  rowwise() %>%
+  mutate(
+    methods_included = sum(!is.na(c_across(all_of(p_col_names)))),
+    methods_significant = sum(c_across(all_of(p_col_names)) < 0.05, na.rm = TRUE),
+    mean_p_value = mean(c_across(all_of(p_col_names)), na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  filter(methods_included > 0) %>% 
+  arrange(desc(methods_significant), desc(methods_included), mean_p_value)
+
+#Save CSV
+write.csv(combined_wide, "results/joint_enrichment_results_wide.csv", row.names = FALSE)
