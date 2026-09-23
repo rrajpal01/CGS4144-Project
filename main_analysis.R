@@ -573,3 +573,17 @@ combined_wide <- combined_wide %>%
 
 #Save CSV
 write.csv(combined_wide, "results/joint_enrichment_results_wide.csv", row.names = FALSE)
+
+# Part 7
+library(dplyr)
+
+#Table from Part 6
+joint_df <- read.csv("results/joint_enrichment_results_wide.csv", stringsAsFactors = FALSE)
+
+#Extract Top 10 Terms
+top10_terms <- joint_df %>%
+  arrange(desc(methods_significant), desc(methods_included), mean_p_value) %>%
+  head(10)
+
+# Save Top 10 Table
+write.csv(top10_terms, "results/top10_enrichment_results_combined.csv", row.names = FALSE)
