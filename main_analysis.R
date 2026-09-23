@@ -312,3 +312,212 @@ pheatmap(
   main = paste("Heatmap of Top", top_deg_count, "Significant DEGs (2 Years vs 12 Weeks)")
 )
 dev.off()
+
+# Part 5
+library(topGO)
+library(clusterProfiler)
+library(enrichplot)
+library(org.Mm.eg.db)
+library(dplyr)
+library(ggplot2)
+
+if (!dir.exists("results")) dir.create("results")
+
+#topGO & Gene Ontology
+
+p_vals <- if ("pvalue" %in% colnames(res_df)) res_df$pvalue else res_df$padj
+gene_names <- gsub("\\..*", "", res_df$gene_symbol)
+
+valid_idx <- !is.na(p_vals) & !is.na(gene_names)
+p_vals <- p_vals[valid_idx]
+gene_names <- gene_names[valid_idx]
+
+# Map to Entrez IDs
+entrez_map <- mapIds(org.Mm.eg.db, keys = gene_names, column = "ENTREZID", keytype = "SYMBOL", multiVals = "first")
+
+if (sum(!is.na(entrez_map)) < 10) {
+  entrez_map <- mapIds(org.Mm.eg.db, keys = gene_names, column = "ENTREZID", keytype = "ENSEMBL", multiVals = "first")
+}
+
+valid_entrez <- !is.na(entrez_map)
+gene_universe <- p_vals[valid_entrez]
+names(gene_universe) <- entrez_map[valid_entrez]
+gene_universe <- tapply(gene_universe, names(gene_universe), min)
+
+top_diff_genes <- function(all_score) {
+  return(all_score < 0.05)
+}
+
+topgo_data <- new(
+  "topGOdata",
+  description = "GO Enrichment using topGO",
+  ontology    = "BP",
+  allGenes    = gene_universe,
+  geneSel     = top_diff_genes,
+  nodeSize    = 10,
+  annot       = annFUN.org,
+  mapping     = "org.Mm.eg.db",
+  ID          = "entrez"
+)
+
+result_classic <- runTest(topgo_data, algorithm = "classic", statistic = "fisher")
+
+top_terms_count <- min(200, length(score(result_classic)))
+topgo_results <- GenTable(
+  topgo_data,
+  classicFisher = result_classic,
+  orderBy = "classicFisher",
+  topNodes = top_terms_count
+)
+
+topgo_clean <- topgo_results %>%
+  transmute(
+    Method = "topGO",
+    Ontology = "Gene Ontology (BP)",
+    Term_ID = GO.ID,
+    Term_Description = Term,
+    Annotated = Annotated,
+    Significant = Significant,
+    Expected = Expected,
+    p_value = as.numeric(classicFisher)
+  ) %>%
+  arrange(p_value)
+
+write.csv(topgo_clean, "results/enrichment_topGO_GO_BP.csv", row.names = FALSE)
+
+#clusterProfiler & Gene Ontology
+sig_degs <- subset(res_df, padj < 0.05 & abs(log2FoldChange) > 1)
+
+deg_genes <- sig_degs$gene_symbol
+universe_genes <- res_df$gene_symbol
+
+#Convert Gene Symbols
+deg_mapped <- bitr(deg_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Mm.eg.db)
+if (nrow(deg_mapped) < 5) {
+  deg_mapped <- bitr(gsub("\\..*", "", deg_genes), fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = org.Mm.eg.db)
+}
+
+universe_mapped <- bitr(universe_genes, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Mm.eg.db)
+if (nrow(universe_mapped) < 10) {
+  universe_mapped <- bitr(gsub("\\..*", "", universe_genes), fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = org.Mm.eg.db)
+}
+
+deg_entrez <- deg_mapped$ENTREZID
+universe_entrez <- universe_mapped$ENTREZID
+
+#GO Biological Process Enrichment
+ego_bp <- enrichGO(
+  gene          = deg_entrez,
+  universe      = universe_entrez,
+  OrgDb         = org.Mm.eg.db,
+  ont           = "BP",
+  pAdjustMethod = "BH",
+  pvalueCutoff  = 0.05,
+  qvalueCutoff  = 0.2,
+  readable      = TRUE
+)
+
+cp_res <- as.data.frame(ego_bp)
+
+if (nrow(cp_res) > 0) {
+  cp_clean <- cp_res %>%
+    mutate(
+      k = as.numeric(sub("/.*", "", GeneRatio)),
+      n = as.numeric(sub(".*/", "", GeneRatio)),
+      M = as.numeric(sub("/.*", "", BgRatio)),
+      N = as.numeric(sub(".*/", "", BgRatio)),
+      Exp = round(n * (M / N), 2)
+    ) %>%
+    transmute(
+      Method           = "clusterProfiler",
+      Ontology         = "Gene Ontology (BP)",
+      Term_ID          = ID,
+      Term_Description = Description,
+      Annotated        = M,
+      Significant      = k,
+      Expected         = Exp,
+      p_value          = pvalue,
+      p.adjust         = p.adjust,
+      qvalue           = qvalue,
+      geneID           = geneID,
+      Count            = Count
+    ) %>%
+    arrange(p_value)
+  
+  #Save CSV
+  write.csv(cp_clean, "results/enrichment_clusterProfiler_GO_BP.csv", row.names = FALSE)
+} else {
+  message("No significantly enriched terms found at the specified cutoff.")
+}
+
+if (nrow(cp_res) > 0) {
+  p_dot <- dotplot(ego_bp, showCategory = 15) + 
+    ggtitle("clusterProfiler: Top 15 GO Biological Processes")
+  print(p_dot)
+  
+  p_bar <- barplot(ego_bp, showCategory = 15) + 
+    ggtitle("clusterProfiler: Top 15 GO Biological Processes")
+  print(p_bar)
+  
+  ggsave("results/clusterProfiler_dotplot.png", plot = p_dot, width = 8, height = 6)
+  ggsave("results/clusterProfiler_barplot.png", plot = p_bar, width = 8, height = 6)
+}
+
+#gProfiler2 & Gene Ontology
+
+if (!requireNamespace("gprofiler2", quietly = TRUE)) install.packages("gprofiler2")
+
+library(gprofiler2)
+library(dplyr)
+library(org.Mm.eg.db)
+
+if (!dir.exists("results")) dir.create("results")
+
+sig_degs <- subset(res_df, padj < 0.05 & abs(log2FoldChange) > 1)
+
+deg_genes <- sig_degs$gene_symbol
+universe_genes <- res_df$gene_symbol
+
+#Run gProfiler2
+gost_res <- gost(
+  query = deg_genes,
+  organism = "mmusculus",
+  ordered_query = FALSE,
+  multi_query = FALSE,
+  significant = TRUE,
+  exclude_iea = FALSE,
+  measure_underrepresentation = FALSE,
+  evcodes = TRUE,
+  user_threshold = 0.05,
+  correction_method = "g_SCS",
+  domain_scope = "custom",
+  custom_bg = universe_genes,
+  sources = c("GO:BP")
+)
+
+if (!is.null(gost_res$result) && nrow(gost_res$result) > 0) {
+  gp_df <- gost_res$result
+  
+  gp_clean <- gp_df %>%
+    transmute(
+      Method           = "gProfiler2",
+      Ontology         = "Gene Ontology (BP)",
+      Term_ID          = term_id,
+      Term_Description = term_name,
+      Annotated        = term_size,
+      Significant      = intersection_size,
+      Expected         = round(query_size * (term_size / effective_domain_size), 2),
+      p_value          = p_value
+    ) %>%
+    arrange(p_value)
+  
+  write.csv(gp_clean, "results/enrichment_gProfiler2_GO_BP.csv", row.names = FALSE)
+} else {
+  message("No significantly enriched terms found using gProfiler2.")
+}
+
+#Visualization
+if (!is.null(gost_res$result)) {
+  p_gost <- gostplot(gost_res, capped = TRUE, interactive = FALSE)
+  ggsave("results/gprofiler2_gostplot.png", plot = p_gost, width = 9, height = 6)
+}
