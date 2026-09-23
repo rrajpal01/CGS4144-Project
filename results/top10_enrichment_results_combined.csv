@@ -1,0 +1,11 @@
+"Term_ID","Term_Description","clusterProfiler_pvalue","clusterProfiler_sig_count","gProfiler2_pvalue","gProfiler2_sig_count","topGO_pvalue","topGO_sig_count","methods_included","methods_significant","mean_p_value"
+"GO:0099072","regulation of postsynaptic membrane neurotransmitter receptor levels",2.31717609661864e-08,7,0.000584698344572861,5,NA,NA,2,2,0.000292360758166914
+"GO:0021761","limbic system development",0.00179985960956822,3,NA,NA,0.00195,70,2,2,0.00187492980478411
+"GO:0051146","striated muscle cell differentiation",0.000678059557552175,5,NA,NA,0.01582,177,2,2,0.00824902977877609
+"GO:1990034","calcium ion export across plasma membrane",0.000162090471928707,2,NA,NA,0.02213,8,2,2,0.0111460452359644
+"GO:0021696","cerebellar cortex morphogenesis",8.61775681719866e-05,3,0.0358673732732676,3,NA,NA,2,2,0.0179767754207198
+"GO:0000395","mRNA 5'-splice site recognition",NA,NA,NA,NA,1.7e-29,144,1,1,1.7e-29
+"GO:0032774","RNA biosynthetic process",NA,NA,NA,NA,1.5e-26,2597,1,1,1.5e-26
+"GO:0010467","gene expression",NA,NA,NA,NA,1.1e-25,3659,1,1,1.1e-25
+"GO:0141187","nucleic acid biosynthetic process",NA,NA,NA,NA,6.7e-25,2627,1,1,6.7e-25
+"GO:0034654","nucleobase-containing compound biosynthe...",NA,NA,NA,NA,6.3e-24,2741,1,1,6.3e-24

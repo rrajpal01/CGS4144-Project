@@ -1,0 +1,62 @@
+"Method","Ontology","Term_ID","Term_Description","Annotated","Significant","Expected","p_value","p.adjust","qvalue","geneID","Count"
+"clusterProfiler","Gene Ontology (BP)","GO:0099072","regulation of postsynaptic membrane neurotransmitter receptor levels",178,7,0.31,2.31717609661864e-08,2.59292005211626e-05,1.86105827549476e-05,"Olfm1/Cntnap2/C1ql2/Gsg1l/Map2k1/Ywhae/Ncdn",7
+"clusterProfiler","Gene Ontology (BP)","GO:0042308","negative regulation of protein import into nucleus",22,3,0.04,7.44315412620812e-06,0.00416444473361344,0.00298901399910358,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0046823","negative regulation of nucleocytoplasmic transport",35,3,0.06,3.11382418758642e-05,0.0116145642196973,0.00833630826360855,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0090317","negative regulation of intracellular protein transport",42,3,0.07,5.41550096063588e-05,0.0151498639373789,0.0108737558762241,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0021696","cerebellar cortex morphogenesis",49,3,0.09,8.61775681719866e-05,0.0153705860813077,0.0110321783359558,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0099633","protein localization to postsynaptic specialization membrane",54,3,0.09,0.000115318671087458,0.0153705860813077,0.0110321783359558,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0099645","neurotransmitter receptor localization to postsynaptic specialization membrane",54,3,0.09,0.000115318671087458,0.0153705860813077,0.0110321783359558,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0051224","negative regulation of protein transport",149,4,0.26,0.000131542413510532,0.0153705860813077,0.0110321783359558,"Pkig/Pkia/Ppp3ca/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:1900181","negative regulation of protein localization to nucleus",57,3,0.1,0.00013554175176675,0.0153705860813077,0.0110321783359558,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0021587","cerebellum morphogenesis",59,3,0.1,0.000150227609200003,0.0153705860813077,0.0110321783359558,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:1990034","calcium ion export across plasma membrane",11,2,0.02,0.000162090471928707,0.0153705860813077,0.0110321783359558,"Slc8a1/Ywhae",2
+"clusterProfiler","Gene Ontology (BP)","GO:1904950","negative regulation of establishment of protein localization",158,4,0.28,0.000164832022319654,0.0153705860813077,0.0110321783359558,"Pkig/Pkia/Ppp3ca/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:0021575","hindbrain morphogenesis",63,3,0.11,0.000182621549699123,0.0157195010856399,0.0112826107223021,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0032387","negative regulation of intracellular transport",65,3,0.11,0.000200387908510241,0.0160167192587828,0.0114959379092717,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0021695","cerebellar cortex development",71,3,0.12,0.000260307560000127,0.0194189439760095,0.0139378714582524,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:1903539","protein localization to postsynaptic membrane",79,3,0.14,0.000356686552759387,0.0233064718526773,0.0167281294610722,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0062237","protein localization to postsynapse",80,3,0.14,0.000370135075662524,0.0233064718526773,0.0167281294610722,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0006606","protein import into nucleus",196,4,0.34,0.000374903032482745,0.0233064718526773,0.0167281294610722,"Pkig/Pkia/Ppp3ca/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:0051170","import into nucleus",201,4,0.35,0.000412366431786753,0.023666105430056,0.0169862550615049,"Pkig/Pkia/Ppp3ca/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:0030007","intracellular potassium ion homeostasis",18,2,0.03,0.000447425838779765,0.023666105430056,0.0169862550615049,"Atp1a1/Ywhae",2
+"clusterProfiler","Gene Ontology (BP)","GO:0042306","regulation of protein import into nucleus",87,3,0.15,0.000473484356903231,0.023666105430056,0.0169862550615049,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0140115","export across plasma membrane",87,3,0.15,0.000473484356903231,0.023666105430056,0.0169862550615049,"Atp1a1/Slc8a1/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:0055002","striated muscle cell development",210,4,0.37,0.000486434696060132,0.023666105430056,0.0169862550615049,"Prox1/Slc8a1/Ppp3ca/Cntnap2",4
+"clusterProfiler","Gene Ontology (BP)","GO:0051146","striated muscle cell differentiation",406,5,0.71,0.000678059557552175,0.0316145268708701,0.022691203614575,"Rpl9/Prox1/Slc8a1/Ppp3ca/Cntnap2",5
+"clusterProfiler","Gene Ontology (BP)","GO:0036376","sodium ion export across plasma membrane",23,2,0.04,0.000735780056934871,0.0329335153484048,0.0236379024606866,"Atp1a1/Slc8a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0097120","receptor localization to synapse",108,3,0.19,0.000889101794223892,0.0369903982501985,0.0265497143736432,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0055001","muscle cell development",247,4,0.43,0.000892529716492725,0.0369903982501985,0.0265497143736432,"Prox1/Slc8a1/Ppp3ca/Cntnap2",4
+"clusterProfiler","Gene Ontology (BP)","GO:0010894","negative regulation of steroid biosynthetic process",27,2,0.05,0.00101628105478927,0.037498147643984,0.0269141495248199,"Prox1/Atp1a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0035418","protein localization to synapse",116,3,0.2,0.00109319993721795,0.037498147643984,0.0269141495248199,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0006883","intracellular sodium ion homeostasis",28,2,0.05,0.00109324738800561,0.037498147643984,0.0269141495248199,"Atp1a1/Slc8a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:1905962","glutamatergic neuron differentiation",28,2,0.05,0.00109324738800561,0.037498147643984,0.0269141495248199,"Prox1/Cntnap2",2
+"clusterProfiler","Gene Ontology (BP)","GO:1903828","negative regulation of protein localization",261,4,0.46,0.00109479482442829,0.037498147643984,0.0269141495248199,"Pkig/Pkia/Ppp3ca/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:0045939","negative regulation of steroid metabolic process",29,2,0.05,0.00117293155325813,0.037498147643984,0.0269141495248199,"Prox1/Atp1a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0098696","regulation of neurotransmitter receptor localization to postsynaptic specialization membrane",29,2,0.05,0.00117293155325813,0.037498147643984,0.0269141495248199,"Olfm1/Map2k1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0014829","vascular associated smooth muscle contraction",30,2,0.05,0.00125532428966392,0.037498147643984,0.0269141495248199,"Slc8a1/Map2k1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0031503","protein-containing complex localization",124,3,0.22,0.00132473218761928,0.037498147643984,0.0269141495248199,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0002026","regulation of the force of heart contraction",31,2,0.05,0.00134041635903428,0.037498147643984,0.0269141495248199,"Atp1a1/Slc8a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0022010","central nervous system myelination",31,2,0.05,0.00134041635903428,0.037498147643984,0.0269141495248199,"Cntnap2/Tenm4",2
+"clusterProfiler","Gene Ontology (BP)","GO:0032291","axon ensheathment in central nervous system",31,2,0.05,0.00134041635903428,0.037498147643984,0.0269141495248199,"Cntnap2/Tenm4",2
+"clusterProfiler","Gene Ontology (BP)","GO:0055075","potassium ion homeostasis",31,2,0.05,0.00134041635903428,0.037498147643984,0.0269141495248199,"Atp1a1/Ywhae",2
+"clusterProfiler","Gene Ontology (BP)","GO:0090257","regulation of muscle system process",279,4,0.49,0.00139966484022079,0.0375750064296877,0.0269693146191165,"Atp1a1/Slc8a1/Ppp3ca/Map2k1",4
+"clusterProfiler","Gene Ontology (BP)","GO:0030900","forebrain development",481,5,0.84,0.00144356731899926,0.0375750064296877,0.0269693146191165,"Prox1/Nrgn/Cntnap2/Ywhae/Btbd3",5
+"clusterProfiler","Gene Ontology (BP)","GO:0090128","regulation of synapse maturation",33,2,0.06,0.00151866165709751,0.0375750064296877,0.0269693146191165,"Nrn1/C1ql2",2
+"clusterProfiler","Gene Ontology (BP)","GO:0014706","striated muscle tissue development",490,5,0.86,0.00156627398482479,0.0375750064296877,0.0269693146191165,"Prox1/Slc8a1/Ppp3ca/Cntnap2/Tenm4",5
+"clusterProfiler","Gene Ontology (BP)","GO:0021549","cerebellum development",132,3,0.23,0.00158501840450346,0.0375750064296877,0.0269693146191165,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0098659","inorganic cation import across plasma membrane",132,3,0.23,0.00158501840450346,0.0375750064296877,0.0269693146191165,"Atp1a1/Slc8a1/Ppp3ca",3
+"clusterProfiler","Gene Ontology (BP)","GO:0099587","inorganic ion import across plasma membrane",132,3,0.23,0.00158501840450346,0.0375750064296877,0.0269693146191165,"Atp1a1/Slc8a1/Ppp3ca",3
+"clusterProfiler","Gene Ontology (BP)","GO:0021697","cerebellar cortex formation",34,2,0.06,0.00161179652245309,0.0375750064296877,0.0269693146191165,"Prox1/Map2k1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0021761","limbic system development",138,3,0.24,0.00179985960956822,0.0411029163899355,0.0295014582620957,"Prox1/Cntnap2/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:1902473","regulation of protein localization to synapse",37,2,0.06,0.00190714027635551,0.0426817993848363,0.0306346953865106,"Olfm1/Map2k1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0032386","regulation of intracellular transport",307,4,0.54,0.00198500991030196,0.0435534527378017,0.031260321188037,"Pkig/Pkia/Map2k1/Ywhae",4
+"clusterProfiler","Gene Ontology (BP)","GO:0022037","metencephalon development",146,3,0.26,0.0021134439205293,0.0446537497682072,0.0320500550991412,"Prox1/Cntnap2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0140058","neuron projection arborization",39,2,0.07,0.00211722776928612,0.0446537497682072,0.0320500550991412,"Ntng1/Cntnap2",2
+"clusterProfiler","Gene Ontology (BP)","GO:0021782","glial cell development",147,3,0.26,0.00215487264296978,0.0446537497682072,0.0320500550991412,"Cntnap2/Tenm4/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0046822","regulation of nucleocytoplasmic transport",148,3,0.26,0.00219680437431131,0.0446949835428065,0.0320796504803738,"Pkig/Pkia/Ywhae",3
+"clusterProfiler","Gene Ontology (BP)","GO:1902414","protein localization to cell junction",153,3,0.27,0.00241408287498266,0.0481359552554633,0.0345493945345172,"Olfm1/C1ql2/Map2k1",3
+"clusterProfiler","Gene Ontology (BP)","GO:0048741","skeletal muscle fiber development",42,2,0.07,0.00245196554920591,0.0481359552554633,0.0345493945345172,"Ppp3ca/Cntnap2",2
+"clusterProfiler","Gene Ontology (BP)","GO:0021537","telencephalon development",329,4,0.57,0.00255025908447627,0.049202412336706,0.0353148399538184,"Prox1/Nrgn/Ywhae/Btbd3",4
+"clusterProfiler","Gene Ontology (BP)","GO:0055078","sodium ion homeostasis",44,2,0.08,0.00268809019271515,0.0493110315680041,0.0353928009843254,"Atp1a1/Slc8a1",2
+"clusterProfiler","Gene Ontology (BP)","GO:0099149","regulation of postsynaptic neurotransmitter receptor internalization",44,2,0.08,0.00268809019271515,0.0493110315680041,0.0353928009843254,"Gsg1l/Ncdn",2
+"clusterProfiler","Gene Ontology (BP)","GO:1902683","regulation of receptor localization to synapse",44,2,0.08,0.00268809019271515,0.0493110315680041,0.0353928009843254,"Olfm1/Map2k1",2
