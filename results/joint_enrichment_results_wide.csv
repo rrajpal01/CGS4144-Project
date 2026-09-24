@@ -1,0 +1,261 @@
+"Term_ID","Term_Description","clusterProfiler_pvalue","clusterProfiler_sig_count","gProfiler2_pvalue","gProfiler2_sig_count","topGO_pvalue","topGO_sig_count","methods_included","methods_significant","mean_p_value"
+"GO:0099072","regulation of postsynaptic membrane neurotransmitter receptor levels",2.31717609661864e-08,7,0.000584698344572861,5,NA,NA,2,2,0.000292360758166914
+"GO:0021761","limbic system development",0.00179985960956822,3,NA,NA,0.00116,56,2,2,0.00147992980478411
+"GO:1990034","calcium ion export across plasma membrane",0.000162090471928707,2,NA,NA,0.01527,7,2,2,0.00771604523596435
+"GO:0051146","striated muscle cell differentiation",0.000678059557552175,5,NA,NA,0.02427,133,2,2,0.0124740297787761
+"GO:0021549","cerebellum development",0.00158501840450346,3,NA,NA,0.02543,48,2,2,0.0135075092022517
+"GO:0021696","cerebellar cortex morphogenesis",8.61775681719866e-05,3,0.0358673732732676,3,NA,NA,2,2,0.0179767754207198
+"GO:0000395","mRNA 5'-splice site recognition",NA,NA,NA,NA,7.7e-30,125,1,1,7.7e-30
+"GO:0090304","nucleic acid metabolic process",NA,NA,NA,NA,1.7e-26,2214,1,1,1.7e-26
+"GO:0045292","mRNA cis splicing, via spliceosome",NA,NA,NA,NA,1.3e-25,131,1,1,1.3e-25
+"GO:0006376","mRNA splice site recognition",NA,NA,NA,NA,1.7e-24,127,1,1,1.7e-24
+"GO:0000245","spliceosomal complex assembly",NA,NA,NA,NA,2.8e-23,153,1,1,2.8e-23
+"GO:0065003","protein-containing complex assembly",NA,NA,NA,NA,6.2e-23,867,1,1,6.2e-23
+"GO:0009058","biosynthetic process",NA,NA,NA,NA,8.8e-22,3157,1,1,8.8e-22
+"GO:0140241","translation at synapse",NA,NA,NA,NA,1.1e-21,45,1,1,1.1e-21
+"GO:0140242","translation at postsynapse",NA,NA,NA,NA,1.1e-21,45,1,1,1.1e-21
+"GO:0140236","translation at presynapse",NA,NA,NA,NA,3.7e-21,44,1,1,3.7e-21
+"GO:0006139","nucleobase-containing compound metabolic...",NA,NA,NA,NA,8.3e-21,2349,1,1,8.3e-21
+"GO:0043933","protein-containing complex organization",NA,NA,NA,NA,1.4e-19,914,1,1,1.4e-19
+"GO:1901740","negative regulation of myoblast fusion",NA,NA,NA,NA,1.4e-18,44,1,1,1.4e-18
+"GO:0010608","post-transcriptional regulation of gene ...",NA,NA,NA,NA,3.3e-18,370,1,1,3.3e-18
+"GO:0034242","negative regulation of syncytium formati...",NA,NA,NA,NA,1.2e-17,45,1,1,1.2e-17
+"GO:1990830","cellular response to leukemia inhibitory...",NA,NA,NA,NA,3e-17,150,1,1,3e-17
+"GO:1990823","response to leukemia inhibitory factor",NA,NA,NA,NA,6.6e-17,150,1,1,6.6e-17
+"GO:0060291","long-term synaptic potentiation",NA,NA,NA,NA,2.4e-15,128,1,1,2.4e-15
+"GO:1901739","regulation of myoblast fusion",NA,NA,NA,NA,1.2e-14,50,1,1,1.2e-14
+"GO:0050806","positive regulation of synaptic transmis...",NA,NA,NA,NA,1.7e-13,157,1,1,1.7e-13
+"GO:0043170","macromolecule metabolic process",NA,NA,NA,NA,1.1e-12,3397,1,1,1.1e-12
+"GO:0060142","regulation of syncytium formation by pla...",NA,NA,NA,NA,1.7e-12,53,1,1,1.7e-12
+"GO:0048167","regulation of synaptic plasticity",NA,NA,NA,NA,2.5e-11,173,1,1,2.5e-11
+"GO:0015986","proton motive force-driven ATP synthesis",NA,NA,NA,NA,1.6e-09,44,1,1,1.6e-09
+"GO:0002181","cytoplasmic translation",NA,NA,NA,NA,1.9e-09,111,1,1,1.9e-09
+"GO:0006119","oxidative phosphorylation",NA,NA,NA,NA,5.3e-09,74,1,1,5.3e-09
+"GO:0007520","myoblast fusion",NA,NA,NA,NA,6.3e-09,55,1,1,6.3e-09
+"GO:0071230","cellular response to amino acid stimulus",NA,NA,NA,NA,2.8e-08,90,1,1,2.8e-08
+"GO:0042776","proton motive force-driven mitochondrial...",NA,NA,NA,NA,4e-08,40,1,1,4e-08
+"GO:0071229","cellular response to acid chemical",NA,NA,NA,NA,6e-08,92,1,1,6e-08
+"GO:0000768","syncytium formation by plasma membrane f...",NA,NA,NA,NA,6.2e-08,61,1,1,6.2e-08
+"GO:0140253","cell-cell fusion",NA,NA,NA,NA,6.2e-08,61,1,1,6.2e-08
+"GO:0001101","response to acid chemical",NA,NA,NA,NA,6.6e-08,111,1,1,6.6e-08
+"GO:0050804","modulation of chemical synaptic transmis...",NA,NA,NA,NA,1.1e-07,284,1,1,1.1e-07
+"GO:0099177","regulation of trans-synaptic signaling",NA,NA,NA,NA,1.2e-07,284,1,1,1.2e-07
+"GO:0043200","response to amino acid",NA,NA,NA,NA,1.3e-07,104,1,1,1.3e-07
+"GO:0006949","syncytium formation",NA,NA,NA,NA,1.4e-07,61,1,1,1.4e-07
+"GO:0007605","sensory perception of sound",NA,NA,NA,NA,1.8e-07,118,1,1,1.8e-07
+"GO:0022904","respiratory electron transport chain",NA,NA,NA,NA,6.4e-07,59,1,1,6.4e-07
+"GO:0099537","trans-synaptic signaling",NA,NA,NA,NA,1.3e-06,342,1,1,1.3e-06
+"GO:0099536","synaptic signaling",NA,NA,NA,NA,1.6e-06,357,1,1,1.6e-06
+"GO:0014902","myotube differentiation",NA,NA,NA,NA,1.7e-06,84,1,1,1.7e-06
+"GO:0048699","generation of neurons",NA,NA,1.87191484439987e-06,14,NA,NA,1,1,1.87191484439987e-06
+"GO:0007268","chemical synaptic transmission",NA,NA,NA,NA,2.1e-06,338,1,1,2.1e-06
+"GO:0098916","anterograde trans-synaptic signaling",NA,NA,NA,NA,2.1e-06,338,1,1,2.1e-06
+"GO:0071234","cellular response to phenylalanine",NA,NA,NA,NA,2.7e-06,18,1,1,2.7e-06
+"GO:0080053","response to phenylalanine",NA,NA,NA,NA,2.7e-06,18,1,1,2.7e-06
+"GO:0022900","electron transport chain",NA,NA,NA,NA,3.9e-06,60,1,1,3.9e-06
+"GO:0050954","sensory perception of mechanical stimulu...",NA,NA,NA,NA,4.8e-06,127,1,1,4.8e-06
+"GO:0002250","adaptive immune response",NA,NA,NA,NA,5.1e-06,269,1,1,5.1e-06
+"GO:0019646","aerobic electron transport chain",NA,NA,NA,NA,6.2e-06,36,1,1,6.2e-06
+"GO:0006941","striated muscle contraction",NA,NA,NA,NA,7.4e-06,99,1,1,7.4e-06
+"GO:0042308","negative regulation of protein import into nucleus",7.44315412620812e-06,3,NA,NA,NA,NA,1,1,7.44315412620812e-06
+"GO:0042775","mitochondrial ATP synthesis coupled elec...",NA,NA,NA,NA,7.8e-06,39,1,1,7.8e-06
+"GO:0022607","cellular component assembly",NA,NA,NA,NA,9.4e-06,1261,1,1,9.4e-06
+"GO:0048666","neuron development",NA,NA,9.42112515825307e-06,12,NA,NA,1,1,9.42112515825307e-06
+"GO:0030182","neuron differentiation",NA,NA,9.82854389296335e-06,13,NA,NA,1,1,9.82854389296335e-06
+"GO:0006754","ATP biosynthetic process",NA,NA,NA,NA,1.3e-05,50,1,1,1.3e-05
+"GO:0022008","neurogenesis",NA,NA,1.4197930323797e-05,14,NA,NA,1,1,1.4197930323797e-05
+"GO:0042773","ATP synthesis coupled electron transport",NA,NA,NA,NA,1.8e-05,39,1,1,1.8e-05
+"GO:0031175","neuron projection development",NA,NA,2.21395036168256e-05,11,NA,NA,1,1,2.21395036168256e-05
+"GO:0009206","purine ribonucleoside triphosphate biosy...",NA,NA,NA,NA,2.5e-05,53,1,1,2.5e-05
+"GO:0046823","negative regulation of nucleocytoplasmic transport",3.11382418758642e-05,3,NA,NA,NA,NA,1,1,3.11382418758642e-05
+"GO:0009145","purine nucleoside triphosphate biosynthe...",NA,NA,NA,NA,3.3e-05,53,1,1,3.3e-05
+"GO:0002323","natural killer cell activation involved ...",NA,NA,NA,NA,3.8e-05,22,1,1,3.8e-05
+"GO:0090317","negative regulation of intracellular protein transport",5.41550096063588e-05,3,NA,NA,NA,NA,1,1,5.41550096063588e-05
+"GO:0051128","regulation of cellular component organization",NA,NA,6.79460365545437e-05,15,NA,NA,1,1,6.79460365545437e-05
+"GO:0007399","nervous system development",NA,NA,9.85498824014485e-05,15,NA,NA,1,1,9.85498824014485e-05
+"GO:0009201","ribonucleoside triphosphate biosynthetic...",NA,NA,NA,NA,1e-04,53,1,1,1e-04
+"GO:0099633","protein localization to postsynaptic specialization membrane",0.000115318671087458,3,NA,NA,NA,NA,1,1,0.000115318671087458
+"GO:0099645","neurotransmitter receptor localization to postsynaptic specialization membrane",0.000115318671087458,3,NA,NA,NA,NA,1,1,0.000115318671087458
+"GO:0044085","cellular component biogenesis",NA,NA,NA,NA,0.00013,1322,1,1,0.00013
+"GO:0051224","negative regulation of protein transport",0.000131542413510532,4,NA,NA,NA,NA,1,1,0.000131542413510532
+"GO:1900181","negative regulation of protein localization to nucleus",0.00013554175176675,3,NA,NA,NA,NA,1,1,0.00013554175176675
+"GO:0006123","mitochondrial electron transport, cytoch...",NA,NA,NA,NA,0.00014,13,1,1,0.00014
+"GO:0001580","detection of chemical stimulus involved ...",NA,NA,NA,NA,0.00014,26,1,1,0.00014
+"GO:0009142","nucleoside triphosphate biosynthetic pro...",NA,NA,NA,NA,0.00015,55,1,1,0.00015
+"GO:0021587","cerebellum morphogenesis",0.000150227609200003,3,NA,NA,NA,NA,1,1,0.000150227609200003
+"GO:0071391","cellular response to estrogen stimulus",NA,NA,NA,NA,0.00016,23,1,1,0.00016
+"GO:1904950","negative regulation of establishment of protein localization",0.000164832022319654,4,NA,NA,NA,NA,1,1,0.000164832022319654
+"GO:0021575","hindbrain morphogenesis",0.000182621549699123,3,NA,NA,NA,NA,1,1,0.000182621549699123
+"GO:0009060","aerobic respiration",NA,NA,NA,NA,0.00019,119,1,1,0.00019
+"GO:0019731","antibacterial humoral response",NA,NA,NA,NA,2e-04,46,1,1,2e-04
+"GO:0032387","negative regulation of intracellular transport",0.000200387908510241,3,NA,NA,NA,NA,1,1,0.000200387908510241
+"GO:0050912","detection of chemical stimulus involved ...",NA,NA,NA,NA,0.00021,28,1,1,0.00021
+"GO:0008150","biological_process",NA,NA,0.000222077178523878,45,NA,NA,1,1,0.000222077178523878
+"GO:0000902","cell morphogenesis",NA,NA,0.000246476256960823,10,NA,NA,1,1,0.000246476256960823
+"GO:0021695","cerebellar cortex development",0.000260307560000127,3,NA,NA,NA,NA,1,1,0.000260307560000127
+"GO:1903539","protein localization to postsynaptic membrane",0.000356686552759387,3,NA,NA,NA,NA,1,1,0.000356686552759387
+"GO:0062237","protein localization to postsynapse",0.000370135075662524,3,NA,NA,NA,NA,1,1,0.000370135075662524
+"GO:0006606","protein import into nucleus",0.000374903032482745,4,NA,NA,NA,NA,1,1,0.000374903032482745
+"GO:0050913","sensory perception of bitter taste",NA,NA,NA,NA,0.00039,27,1,1,0.00039
+"GO:0051170","import into nucleus",0.000412366431786753,4,NA,NA,NA,NA,1,1,0.000412366431786753
+"GO:0030007","intracellular potassium ion homeostasis",0.000447425838779765,2,NA,NA,NA,NA,1,1,0.000447425838779765
+"GO:0042306","regulation of protein import into nucleus",0.000473484356903231,3,NA,NA,NA,NA,1,1,0.000473484356903231
+"GO:0140115","export across plasma membrane",0.000473484356903231,3,NA,NA,NA,NA,1,1,0.000473484356903231
+"GO:0055002","striated muscle cell development",0.000486434696060132,4,NA,NA,NA,NA,1,1,0.000486434696060132
+"GO:0007289","spermatid nucleus differentiation",NA,NA,NA,NA,0.00052,29,1,1,0.00052
+"GO:0008152","metabolic process",NA,NA,NA,NA,0.00058,3835,1,1,0.00058
+"GO:0009617","response to bacterium",NA,NA,NA,NA,0.00063,320,1,1,0.00063
+"GO:0036376","sodium ion export across plasma membrane",0.000735780056934871,2,NA,NA,NA,NA,1,1,0.000735780056934871
+"GO:0097120","receptor localization to synapse",0.000889101794223892,3,NA,NA,NA,NA,1,1,0.000889101794223892
+"GO:0055001","muscle cell development",0.000892529716492725,4,NA,NA,NA,NA,1,1,0.000892529716492725
+"GO:0097376","interneuron axon guidance",NA,NA,NA,NA,0.00101,8,1,1,0.00101
+"GO:0010894","negative regulation of steroid biosynthetic process",0.00101628105478927,2,NA,NA,NA,NA,1,1,0.00101628105478927
+"GO:0060297","regulation of sarcomere organization",NA,NA,NA,NA,0.00104,9,1,1,0.00104
+"GO:0035418","protein localization to synapse",0.00109319993721795,3,NA,NA,NA,NA,1,1,0.00109319993721795
+"GO:0006883","intracellular sodium ion homeostasis",0.00109324738800561,2,NA,NA,NA,NA,1,1,0.00109324738800561
+"GO:1905962","glutamatergic neuron differentiation",0.00109324738800561,2,NA,NA,NA,NA,1,1,0.00109324738800561
+"GO:1903828","negative regulation of protein localization",0.00109479482442829,4,NA,NA,NA,NA,1,1,0.00109479482442829
+"GO:0007267","cell-cell signaling",NA,NA,NA,NA,0.00114,471,1,1,0.00114
+"GO:0045939","negative regulation of steroid metabolic process",0.00117293155325813,2,NA,NA,NA,NA,1,1,0.00117293155325813
+"GO:0098696","regulation of neurotransmitter receptor localization to postsynaptic specialization membrane",0.00117293155325813,2,NA,NA,NA,NA,1,1,0.00117293155325813
+"GO:0035092","sperm DNA condensation",NA,NA,NA,NA,0.00123,22,1,1,0.00123
+"GO:0098885","modification of postsynaptic actin cytos...",NA,NA,NA,NA,0.00125,16,1,1,0.00125
+"GO:0014829","vascular associated smooth muscle contraction",0.00125532428966392,2,NA,NA,NA,NA,1,1,0.00125532428966392
+"GO:0031503","protein-containing complex localization",0.00132473218761928,3,NA,NA,NA,NA,1,1,0.00132473218761928
+"GO:0002026","regulation of the force of heart contraction",0.00134041635903428,2,NA,NA,NA,NA,1,1,0.00134041635903428
+"GO:0022010","central nervous system myelination",0.00134041635903428,2,NA,NA,NA,NA,1,1,0.00134041635903428
+"GO:0032291","axon ensheathment in central nervous system",0.00134041635903428,2,NA,NA,NA,NA,1,1,0.00134041635903428
+"GO:0055075","potassium ion homeostasis",0.00134041635903428,2,NA,NA,NA,NA,1,1,0.00134041635903428
+"GO:0090257","regulation of muscle system process",0.00139966484022079,4,NA,NA,NA,NA,1,1,0.00139966484022079
+"GO:0030900","forebrain development",0.00144356731899926,5,NA,NA,NA,NA,1,1,0.00144356731899926
+"GO:0090128","regulation of synapse maturation",0.00151866165709751,2,NA,NA,NA,NA,1,1,0.00151866165709751
+"GO:0048468","cell development",NA,NA,0.00154098037283767,15,NA,NA,1,1,0.00154098037283767
+"GO:0000348","mRNA branch site recognition",NA,NA,NA,NA,0.00155,21,1,1,0.00155
+"GO:0014706","striated muscle tissue development",0.00156627398482479,5,NA,NA,NA,NA,1,1,0.00156627398482479
+"GO:0098659","inorganic cation import across plasma membrane",0.00158501840450346,3,NA,NA,NA,NA,1,1,0.00158501840450346
+"GO:0099587","inorganic ion import across plasma membrane",0.00158501840450346,3,NA,NA,NA,NA,1,1,0.00158501840450346
+"GO:0021697","cerebellar cortex formation",0.00161179652245309,2,NA,NA,NA,NA,1,1,0.00161179652245309
+"GO:0120036","plasma membrane bounded cell projection organization",NA,NA,0.00169276458225027,11,NA,NA,1,1,0.00169276458225027
+"GO:0021953","central nervous system neuron differenti...",NA,NA,NA,NA,0.00175,98,1,1,0.00175
+"GO:1902473","regulation of protein localization to synapse",0.00190714027635551,2,NA,NA,NA,NA,1,1,0.00190714027635551
+"GO:0021889","olfactory bulb interneuron differentiati...",NA,NA,NA,NA,0.00192,14,1,1,0.00192
+"GO:0048670","regulation of collateral sprouting",NA,NA,NA,NA,0.00192,14,1,1,0.00192
+"GO:0032386","regulation of intracellular transport",0.00198500991030196,4,NA,NA,NA,NA,1,1,0.00198500991030196
+"GO:0022037","metencephalon development",0.0021134439205293,3,NA,NA,NA,NA,1,1,0.0021134439205293
+"GO:0140058","neuron projection arborization",0.00211722776928612,2,NA,NA,NA,NA,1,1,0.00211722776928612
+"GO:0021782","glial cell development",0.00215487264296978,3,NA,NA,NA,NA,1,1,0.00215487264296978
+"GO:0046822","regulation of nucleocytoplasmic transport",0.00219680437431131,3,NA,NA,NA,NA,1,1,0.00219680437431131
+"GO:0030030","cell projection organization",NA,NA,0.00228835041935901,11,NA,NA,1,1,0.00228835041935901
+"GO:1902414","protein localization to cell junction",0.00241408287498266,3,NA,NA,NA,NA,1,1,0.00241408287498266
+"GO:0071345","cellular response to cytokine stimulus",NA,NA,NA,NA,0.00243,362,1,1,0.00243
+"GO:0048741","skeletal muscle fiber development",0.00245196554920591,2,NA,NA,NA,NA,1,1,0.00245196554920591
+"GO:0021537","telencephalon development",0.00255025908447627,4,NA,NA,NA,NA,1,1,0.00255025908447627
+"GO:0055078","sodium ion homeostasis",0.00268809019271515,2,NA,NA,NA,NA,1,1,0.00268809019271515
+"GO:0099149","regulation of postsynaptic neurotransmitter receptor internalization",0.00268809019271515,2,NA,NA,NA,NA,1,1,0.00268809019271515
+"GO:1902683","regulation of receptor localization to synapse",0.00268809019271515,2,NA,NA,NA,NA,1,1,0.00268809019271515
+"GO:0051279","regulation of release of sequestered cal...",NA,NA,NA,NA,0.00271,35,1,1,0.00271
+"GO:0031272","regulation of pseudopodium assembly",NA,NA,NA,NA,0.0028,8,1,1,0.0028
+"GO:0031274","positive regulation of pseudopodium asse...",NA,NA,NA,NA,0.0028,8,1,1,0.0028
+"GO:0021766","hippocampus development",NA,NA,NA,NA,0.00334,43,1,1,0.00334
+"GO:0097009","energy homeostasis",NA,NA,NA,NA,0.00354,60,1,1,0.00354
+"GO:0045333","cellular respiration",NA,NA,NA,NA,0.00363,129,1,1,0.00363
+"GO:0034097","response to cytokine",NA,NA,NA,NA,0.00391,396,1,1,0.00391
+"GO:0021879","forebrain neuron differentiation",NA,NA,NA,NA,0.00405,42,1,1,0.00405
+"GO:0021872","forebrain generation of neurons",NA,NA,NA,NA,0.00419,45,1,1,0.00419
+"GO:0031268","pseudopodium organization",NA,NA,NA,NA,0.00439,10,1,1,0.00439
+"GO:0030838","positive regulation of actin filament po...",NA,NA,NA,NA,0.00474,25,1,1,0.00474
+"GO:1901652","response to peptide",NA,NA,NA,NA,0.00493,401,1,1,0.00493
+"GO:0006120","mitochondrial electron transport, NADH t...",NA,NA,NA,NA,0.00499,16,1,1,0.00499
+"GO:0050909","sensory perception of taste",NA,NA,NA,NA,0.00508,32,1,1,0.00508
+"GO:0015669","gas transport",NA,NA,NA,NA,0.00509,12,1,1,0.00509
+"GO:0007275","multicellular organism development",NA,NA,0.00522631146347367,18,NA,NA,1,1,0.00522631146347367
+"GO:0031269","pseudopodium assembly",NA,NA,NA,NA,0.0053,9,1,1,0.0053
+"GO:0007600","sensory perception",NA,NA,NA,NA,0.00545,616,1,1,0.00545
+"GO:0050829","defense response to Gram-negative bacter...",NA,NA,NA,NA,0.00616,47,1,1,0.00616
+"GO:0071107","response to parathyroid hormone",NA,NA,NA,NA,0.00631,8,1,1,0.00631
+"GO:0048667","cell morphogenesis involved in neuron differentiation",NA,NA,0.00638727549016468,7,NA,NA,1,1,0.00638727549016468
+"GO:0048668","collateral sprouting",NA,NA,NA,NA,0.00663,18,1,1,0.00663
+"GO:1900242","regulation of synaptic vesicle endocytos...",NA,NA,NA,NA,0.00663,18,1,1,0.00663
+"GO:0009205","purine ribonucleoside triphosphate metab...",NA,NA,NA,NA,0.00681,98,1,1,0.00681
+"GO:0048671","negative regulation of collateral sprout...",NA,NA,NA,NA,0.00733,7,1,1,0.00733
+"GO:2000987","positive regulation of behavioral fear r...",NA,NA,NA,NA,0.00733,7,1,1,0.00733
+"GO:0061734","type 2 mitophagy",NA,NA,NA,NA,0.00798,10,1,1,0.00798
+"GO:0071732","cellular response to nitric oxide",NA,NA,NA,NA,0.00798,10,1,1,0.00798
+"GO:0009144","purine nucleoside triphosphate metabolic...",NA,NA,NA,NA,0.00816,100,1,1,0.00816
+"GO:0031424","keratinization",NA,NA,NA,NA,0.00824,33,1,1,0.00824
+"GO:0048856","anatomical structure development",NA,NA,0.00824669716681039,20,NA,NA,1,1,0.00824669716681039
+"GO:0010959","regulation of metal ion transport",NA,NA,NA,NA,0.0083,144,1,1,0.0083
+"GO:0071840","cellular component organization or biogenesis",NA,NA,0.00859595010924047,22,NA,NA,1,1,0.00859595010924047
+"GO:0046034","ATP metabolic process",NA,NA,NA,NA,0.00895,90,1,1,0.00895
+"GO:0032502","developmental process",NA,NA,0.00908675089953843,21,NA,NA,1,1,0.00908675089953843
+"GO:0019730","antimicrobial humoral response",NA,NA,NA,NA,0.00971,65,1,1,0.00971
+"GO:0051412","response to corticosterone",NA,NA,NA,NA,0.01022,13,1,1,0.01022
+"GO:0006936","muscle contraction",NA,NA,NA,NA,0.01036,130,1,1,0.01036
+"GO:0051924","regulation of calcium ion transport",NA,NA,NA,NA,0.01055,98,1,1,0.01055
+"GO:0097154","GABAergic neuron differentiation",NA,NA,NA,NA,0.01059,11,1,1,0.01059
+"GO:0048812","neuron projection morphogenesis",NA,NA,0.0105952017940244,7,NA,NA,1,1,0.0105952017940244
+"GO:0006959","humoral immune response",NA,NA,NA,NA,0.01123,100,1,1,0.01123
+"GO:0009152","purine ribonucleotide biosynthetic proce...",NA,NA,NA,NA,0.01148,63,1,1,0.01148
+"GO:0002227","innate immune response in mucosa",NA,NA,NA,NA,0.01179,17,1,1,0.01179
+"GO:0010629","negative regulation of gene expression",NA,NA,NA,NA,0.01228,489,1,1,0.01228
+"GO:0090281","negative regulation of calcium ion impor...",NA,NA,NA,NA,0.01238,8,1,1,0.01238
+"GO:0120039","plasma membrane bounded cell projection morphogenesis",NA,NA,0.0125202151382902,7,NA,NA,1,1,0.0125202151382902
+"GO:0098900","regulation of action potential",NA,NA,NA,NA,0.01254,33,1,1,0.01254
+"GO:0048858","cell projection morphogenesis",NA,NA,0.0133675828234556,7,NA,NA,1,1,0.0133675828234556
+"GO:0030154","cell differentiation",NA,NA,0.0134987555950323,17,NA,NA,1,1,0.0134987555950323
+"GO:0048869","cellular developmental process",NA,NA,0.0135408225716716,17,NA,NA,1,1,0.0135408225716716
+"GO:0042756","drinking behavior",NA,NA,NA,NA,0.01523,13,1,1,0.01523
+"GO:1903367","positive regulation of fear response",NA,NA,NA,NA,0.01527,7,1,1,0.01527
+"GO:0061844","antimicrobial humoral immune response me...",NA,NA,NA,NA,0.01606,50,1,1,0.01606
+"GO:0065007","biological regulation",NA,NA,0.0160930359120515,30,NA,NA,1,1,0.0160930359120515
+"GO:0071361","cellular response to ethanol",NA,NA,NA,NA,0.01617,17,1,1,0.01617
+"GO:1902600","proton transmembrane transport",NA,NA,NA,NA,0.01634,58,1,1,0.01634
+"GO:0008038","neuron recognition",NA,NA,NA,NA,0.01642,23,1,1,0.01642
+"GO:0060074","synapse maturation",NA,NA,NA,NA,0.01642,23,1,1,0.01642
+"GO:1904064","positive regulation of cation transmembr...",NA,NA,NA,NA,0.01662,57,1,1,0.01662
+"GO:0071222","cellular response to lipopolysaccharide",NA,NA,NA,NA,0.01687,104,1,1,0.01687
+"GO:0010975","regulation of neuron projection development",NA,NA,0.0170196702181161,6,NA,NA,1,1,0.0170196702181161
+"GO:2000822","regulation of behavioral fear response",NA,NA,NA,NA,0.01712,9,1,1,0.01712
+"GO:0009141","nucleoside triphosphate metabolic proces...",NA,NA,NA,NA,0.01725,103,1,1,0.01725
+"GO:0060997","dendritic spine morphogenesis",NA,NA,NA,NA,0.01851,33,1,1,0.01851
+"GO:1902905","positive regulation of supramolecular fi...",NA,NA,NA,NA,0.01857,65,1,1,0.01857
+"GO:0007218","neuropeptide signaling pathway",NA,NA,NA,NA,0.02018,44,1,1,0.02018
+"GO:1902170","cellular response to reactive nitrogen s...",NA,NA,NA,NA,0.02132,10,1,1,0.02132
+"GO:0015671","oxygen transport",NA,NA,NA,NA,0.02181,8,1,1,0.02181
+"GO:0048672","positive regulation of collateral sprout...",NA,NA,NA,NA,0.02181,8,1,1,0.02181
+"GO:1903999","negative regulation of eating behavior",NA,NA,NA,NA,0.02181,8,1,1,0.02181
+"GO:0016043","cellular component organization",NA,NA,0.0220032653969279,21,NA,NA,1,1,0.0220032653969279
+"GO:0061001","regulation of dendritic spine morphogene...",NA,NA,NA,NA,0.02205,27,1,1,0.02205
+"GO:0051926","negative regulation of calcium ion trans...",NA,NA,NA,NA,0.02219,28,1,1,0.02219
+"GO:0010469","regulation of signaling receptor activit...",NA,NA,NA,NA,0.02233,31,1,1,0.02233
+"GO:0097061","dendritic spine organization",NA,NA,NA,NA,0.02347,44,1,1,0.02347
+"GO:0046827","positive regulation of protein export fr...",NA,NA,NA,NA,0.02494,11,1,1,0.02494
+"GO:0042742","defense response to bacterium",NA,NA,NA,NA,0.02504,135,1,1,0.02504
+"GO:0071219","cellular response to molecule of bacteri...",NA,NA,NA,NA,0.02596,105,1,1,0.02596
+"GO:1903365","regulation of fear response",NA,NA,NA,NA,0.0274,9,1,1,0.0274
+"GO:1905664","regulation of calcium ion import across ...",NA,NA,NA,NA,0.0274,9,1,1,0.0274
+"GO:0034767","positive regulation of monoatomic ion tr...",NA,NA,NA,NA,0.02764,63,1,1,0.02764
+"GO:0021892","cerebral cortex GABAergic interneuron di...",NA,NA,NA,NA,0.02781,7,1,1,0.02781
+"GO:0045759","negative regulation of action potential",NA,NA,NA,NA,0.02781,7,1,1,0.02781
+"GO:0061303","cornea development in camera-type eye",NA,NA,NA,NA,0.02781,7,1,1,0.02781
+"GO:1902667","regulation of axon guidance",NA,NA,NA,NA,0.02781,7,1,1,0.02781
+"GO:0051673","disruption of plasma membrane integrity ...",NA,NA,NA,NA,0.028,12,1,1,0.028
+"GO:0140975","disruption of cellular anatomical struct...",NA,NA,NA,NA,0.028,12,1,1,0.028
+"GO:1900452","regulation of long-term synaptic depress...",NA,NA,NA,NA,0.028,12,1,1,0.028
+"GO:0043627","response to estrogen",NA,NA,NA,NA,0.02885,40,1,1,0.02885
+"GO:0065008","regulation of biological quality",NA,NA,0.0290566758476264,13,NA,NA,1,1,0.0290566758476264
+"GO:0050789","regulation of biological process",NA,NA,0.0309049711801742,29,NA,NA,1,1,0.0309049711801742
+"GO:0099010","modification of postsynaptic structure",NA,NA,NA,NA,0.0321,22,1,1,0.0321
+"GO:1901379","regulation of potassium ion transmembran...",NA,NA,NA,NA,0.03257,28,1,1,0.03257
+"GO:0009987","cellular process",NA,NA,0.0327083162029932,38,NA,NA,1,1,0.0327083162029932
+"GO:0002329","pre-B cell differentiation",NA,NA,NA,NA,0.03535,8,1,1,0.03535
+"GO:0038020","insulin receptor recycling",NA,NA,NA,NA,0.03535,8,1,1,0.03535
+"GO:1905274","regulation of modification of postsynapt...",NA,NA,NA,NA,0.03535,8,1,1,0.03535
+"GO:0021826","substrate-independent telencephalic tang...",NA,NA,NA,NA,0.03547,6,1,1,0.03547
+"GO:0021843","substrate-independent telencephalic tang...",NA,NA,NA,NA,0.03547,6,1,1,0.03547
+"GO:0035332","positive regulation of hippo signaling",NA,NA,NA,NA,0.03586,11,1,1,0.03586
+"GO:0032273","positive regulation of protein polymeriz...",NA,NA,NA,NA,0.03606,35,1,1,0.03606
+"GO:0043269","regulation of monoatomic ion transport",NA,NA,NA,NA,0.03637,168,1,1,0.03637
+"GO:0051209","release of sequestered calcium ion into ...",NA,NA,NA,NA,0.03939,46,1,1,0.03939
+"GO:0060412","ventricular septum morphogenesis",NA,NA,NA,NA,0.03939,21,1,1,0.03939
+"GO:0050850","positive regulation of calcium-mediated ...",NA,NA,NA,NA,0.03963,25,1,1,0.03963

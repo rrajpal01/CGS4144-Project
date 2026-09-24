@@ -1,0 +1,11 @@
+"Term_ID","Term_Description","clusterProfiler_pvalue","clusterProfiler_sig_count","gProfiler2_pvalue","gProfiler2_sig_count","topGO_pvalue","topGO_sig_count","methods_included","methods_significant","mean_p_value"
+"GO:0099072","regulation of postsynaptic membrane neurotransmitter receptor levels",2.31717609661864e-08,7,0.000584698344572861,5,NA,NA,2,2,0.000292360758166914
+"GO:0021761","limbic system development",0.00179985960956822,3,NA,NA,0.00116,56,2,2,0.00147992980478411
+"GO:1990034","calcium ion export across plasma membrane",0.000162090471928707,2,NA,NA,0.01527,7,2,2,0.00771604523596435
+"GO:0051146","striated muscle cell differentiation",0.000678059557552175,5,NA,NA,0.02427,133,2,2,0.0124740297787761
+"GO:0021549","cerebellum development",0.00158501840450346,3,NA,NA,0.02543,48,2,2,0.0135075092022517
+"GO:0021696","cerebellar cortex morphogenesis",8.61775681719866e-05,3,0.0358673732732676,3,NA,NA,2,2,0.0179767754207198
+"GO:0000395","mRNA 5'-splice site recognition",NA,NA,NA,NA,7.7e-30,125,1,1,7.7e-30
+"GO:0090304","nucleic acid metabolic process",NA,NA,NA,NA,1.7e-26,2214,1,1,1.7e-26
+"GO:0045292","mRNA cis splicing, via spliceosome",NA,NA,NA,NA,1.3e-25,131,1,1,1.3e-25
+"GO:0006376","mRNA splice site recognition",NA,NA,NA,NA,1.7e-24,127,1,1,1.7e-24

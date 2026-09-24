@@ -1,0 +1,201 @@
+"Method","Ontology","Term_ID","Term_Description","Annotated","Significant","Expected","p_value"
+"topGO","Gene Ontology (BP)","GO:0000395","mRNA 5'-splice site recognition",182,125,51.36,7.7e-30
+"topGO","Gene Ontology (BP)","GO:0090304","nucleic acid metabolic process",6666,2214,1881.2,1.7e-26
+"topGO","Gene Ontology (BP)","GO:0045292","mRNA cis splicing, via spliceosome",208,131,58.7,1.3e-25
+"topGO","Gene Ontology (BP)","GO:0006376","mRNA splice site recognition",203,127,57.29,1.7e-24
+"topGO","Gene Ontology (BP)","GO:0000245","spliceosomal complex assembly",268,153,75.63,2.8e-23
+"topGO","Gene Ontology (BP)","GO:0065003","protein-containing complex assembly",2337,867,659.52,6.2e-23
+"topGO","Gene Ontology (BP)","GO:0009058","biosynthetic process",10032,3157,2831.11,8.8e-22
+"topGO","Gene Ontology (BP)","GO:0140241","translation at synapse",48,45,13.55,1.1e-21
+"topGO","Gene Ontology (BP)","GO:0140242","translation at postsynapse",48,45,13.55,1.1e-21
+"topGO","Gene Ontology (BP)","GO:0140236","translation at presynapse",47,44,13.26,3.7e-21
+"topGO","Gene Ontology (BP)","GO:0006139","nucleobase-containing compound metabolic...",7266,2349,2050.52,8.3e-21
+"topGO","Gene Ontology (BP)","GO:0043933","protein-containing complex organization",2541,914,717.09,1.4e-19
+"topGO","Gene Ontology (BP)","GO:1901740","negative regulation of myoblast fusion",50,44,14.11,1.4e-18
+"topGO","Gene Ontology (BP)","GO:0010608","post-transcriptional regulation of gene ...",892,370,251.73,3.3e-18
+"topGO","Gene Ontology (BP)","GO:0034242","negative regulation of syncytium formati...",53,45,14.96,1.2e-17
+"topGO","Gene Ontology (BP)","GO:1990830","cellular response to leukemia inhibitory...",291,150,82.12,3e-17
+"topGO","Gene Ontology (BP)","GO:1990823","response to leukemia inhibitory factor",293,150,82.69,6.6e-17
+"topGO","Gene Ontology (BP)","GO:0060291","long-term synaptic potentiation",246,128,69.42,2.4e-15
+"topGO","Gene Ontology (BP)","GO:1901739","regulation of myoblast fusion",68,50,19.19,1.2e-14
+"topGO","Gene Ontology (BP)","GO:0050806","positive regulation of synaptic transmis...",334,157,94.26,1.7e-13
+"topGO","Gene Ontology (BP)","GO:0043170","macromolecule metabolic process",11178,3397,3154.52,1.1e-12
+"topGO","Gene Ontology (BP)","GO:0060142","regulation of syncytium formation by pla...",80,53,22.58,1.7e-12
+"topGO","Gene Ontology (BP)","GO:0048167","regulation of synaptic plasticity",396,173,111.75,2.5e-11
+"topGO","Gene Ontology (BP)","GO:0015986","proton motive force-driven ATP synthesis",70,44,19.75,1.6e-09
+"topGO","Gene Ontology (BP)","GO:0002181","cytoplasmic translation",240,111,67.73,1.9e-09
+"topGO","Gene Ontology (BP)","GO:0006119","oxidative phosphorylation",145,74,40.92,5.3e-09
+"topGO","Gene Ontology (BP)","GO:0007520","myoblast fusion",98,55,27.66,6.3e-09
+"topGO","Gene Ontology (BP)","GO:0071230","cellular response to amino acid stimulus",192,90,54.18,2.8e-08
+"topGO","Gene Ontology (BP)","GO:0042776","proton motive force-driven mitochondrial...",66,40,18.63,4e-08
+"topGO","Gene Ontology (BP)","GO:0071229","cellular response to acid chemical",200,92,56.44,6e-08
+"topGO","Gene Ontology (BP)","GO:0000768","syncytium formation by plasma membrane f...",118,61,33.3,6.2e-08
+"topGO","Gene Ontology (BP)","GO:0140253","cell-cell fusion",118,61,33.3,6.2e-08
+"topGO","Gene Ontology (BP)","GO:0001101","response to acid chemical",253,111,71.4,6.6e-08
+"topGO","Gene Ontology (BP)","GO:0050804","modulation of chemical synaptic transmis...",773,284,218.15,1.1e-07
+"topGO","Gene Ontology (BP)","GO:0099177","regulation of trans-synaptic signaling",774,284,218.43,1.2e-07
+"topGO","Gene Ontology (BP)","GO:0043200","response to amino acid",236,104,66.6,1.3e-07
+"topGO","Gene Ontology (BP)","GO:0006949","syncytium formation",120,61,33.86,1.4e-07
+"topGO","Gene Ontology (BP)","GO:0007605","sensory perception of sound",277,118,78.17,1.8e-07
+"topGO","Gene Ontology (BP)","GO:0022904","respiratory electron transport chain",119,59,33.58,6.4e-07
+"topGO","Gene Ontology (BP)","GO:0099537","trans-synaptic signaling",976,342,275.43,1.3e-06
+"topGO","Gene Ontology (BP)","GO:0099536","synaptic signaling",1026,357,289.54,1.6e-06
+"topGO","Gene Ontology (BP)","GO:0014902","myotube differentiation",190,84,53.62,1.7e-06
+"topGO","Gene Ontology (BP)","GO:0007268","chemical synaptic transmission",968,338,273.18,2.1e-06
+"topGO","Gene Ontology (BP)","GO:0098916","anterograde trans-synaptic signaling",968,338,273.18,2.1e-06
+"topGO","Gene Ontology (BP)","GO:0071234","cellular response to phenylalanine",24,18,6.77,2.7e-06
+"topGO","Gene Ontology (BP)","GO:0080053","response to phenylalanine",24,18,6.77,2.7e-06
+"topGO","Gene Ontology (BP)","GO:0022900","electron transport chain",127,60,35.84,3.9e-06
+"topGO","Gene Ontology (BP)","GO:0050954","sensory perception of mechanical stimulu...",319,127,90.02,4.8e-06
+"topGO","Gene Ontology (BP)","GO:0002250","adaptive immune response",757,269,213.63,5.1e-06
+"topGO","Gene Ontology (BP)","GO:0019646","aerobic electron transport chain",66,36,18.63,6.2e-06
+"topGO","Gene Ontology (BP)","GO:0006941","striated muscle contraction",239,99,67.45,7.4e-06
+"topGO","Gene Ontology (BP)","GO:0042775","mitochondrial ATP synthesis coupled elec...",74,39,20.88,7.8e-06
+"topGO","Gene Ontology (BP)","GO:0022607","cellular component assembly",4068,1261,1148.02,9.4e-06
+"topGO","Gene Ontology (BP)","GO:0006754","ATP biosynthetic process",104,50,29.35,1.3e-05
+"topGO","Gene Ontology (BP)","GO:0042773","ATP synthesis coupled electron transport",76,39,21.45,1.8e-05
+"topGO","Gene Ontology (BP)","GO:0009206","purine ribonucleoside triphosphate biosy...",114,53,32.17,2.5e-05
+"topGO","Gene Ontology (BP)","GO:0009145","purine nucleoside triphosphate biosynthe...",115,53,32.45,3.3e-05
+"topGO","Gene Ontology (BP)","GO:0002323","natural killer cell activation involved ...",36,22,10.16,3.8e-05
+"topGO","Gene Ontology (BP)","GO:0009201","ribonucleoside triphosphate biosynthetic...",119,53,33.58,1e-04
+"topGO","Gene Ontology (BP)","GO:0044085","cellular component biogenesis",4335,1322,1223.37,0.00013
+"topGO","Gene Ontology (BP)","GO:0006123","mitochondrial electron transport, cytoch...",18,13,5.08,0.00014
+"topGO","Gene Ontology (BP)","GO:0001580","detection of chemical stimulus involved ...",48,26,13.55,0.00014
+"topGO","Gene Ontology (BP)","GO:0009142","nucleoside triphosphate biosynthetic pro...",126,55,35.56,0.00015
+"topGO","Gene Ontology (BP)","GO:0071391","cellular response to estrogen stimulus",41,23,11.57,0.00016
+"topGO","Gene Ontology (BP)","GO:0009060","aerobic respiration",317,119,89.46,0.00019
+"topGO","Gene Ontology (BP)","GO:0019731","antibacterial humoral response",102,46,28.79,2e-04
+"topGO","Gene Ontology (BP)","GO:0050912","detection of chemical stimulus involved ...",54,28,15.24,0.00021
+"topGO","Gene Ontology (BP)","GO:0050913","sensory perception of bitter taste",53,27,14.96,0.00039
+"topGO","Gene Ontology (BP)","GO:0007289","spermatid nucleus differentiation",59,29,16.65,0.00052
+"topGO","Gene Ontology (BP)","GO:0008152","metabolic process",13194,3835,3723.45,0.00058
+"topGO","Gene Ontology (BP)","GO:0009617","response to bacterium",973,320,274.59,0.00063
+"topGO","Gene Ontology (BP)","GO:0097376","interneuron axon guidance",10,8,2.82,0.00101
+"topGO","Gene Ontology (BP)","GO:0060297","regulation of sarcomere organization",12,9,3.39,0.00104
+"topGO","Gene Ontology (BP)","GO:0007267","cell-cell signaling",1484,471,418.8,0.00114
+"topGO","Gene Ontology (BP)","GO:0021761","limbic system development",138,56,38.94,0.00116
+"topGO","Gene Ontology (BP)","GO:0035092","sperm DNA condensation",43,22,12.13,0.00123
+"topGO","Gene Ontology (BP)","GO:0098885","modification of postsynaptic actin cytos...",28,16,7.9,0.00125
+"topGO","Gene Ontology (BP)","GO:0000348","mRNA branch site recognition",41,21,11.57,0.00155
+"topGO","Gene Ontology (BP)","GO:0021953","central nervous system neuron differenti...",268,98,75.63,0.00175
+"topGO","Gene Ontology (BP)","GO:0021889","olfactory bulb interneuron differentiati...",24,14,6.77,0.00192
+"topGO","Gene Ontology (BP)","GO:0048670","regulation of collateral sprouting",24,14,6.77,0.00192
+"topGO","Gene Ontology (BP)","GO:0071345","cellular response to cytokine stimulus",1132,362,319.46,0.00243
+"topGO","Gene Ontology (BP)","GO:0051279","regulation of release of sequestered cal...",81,35,22.86,0.00271
+"topGO","Gene Ontology (BP)","GO:0031272","regulation of pseudopodium assembly",11,8,3.1,0.0028
+"topGO","Gene Ontology (BP)","GO:0031274","positive regulation of pseudopodium asse...",11,8,3.1,0.0028
+"topGO","Gene Ontology (BP)","GO:0021766","hippocampus development",105,43,29.63,0.00334
+"topGO","Gene Ontology (BP)","GO:0097009","energy homeostasis",156,60,44.02,0.00354
+"topGO","Gene Ontology (BP)","GO:0045333","cellular respiration",372,129,104.98,0.00363
+"topGO","Gene Ontology (BP)","GO:0034097","response to cytokine",1254,396,353.89,0.00391
+"topGO","Gene Ontology (BP)","GO:0021879","forebrain neuron differentiation",103,42,29.07,0.00405
+"topGO","Gene Ontology (BP)","GO:0021872","forebrain generation of neurons",112,45,31.61,0.00419
+"topGO","Gene Ontology (BP)","GO:0031268","pseudopodium organization",16,10,4.52,0.00439
+"topGO","Gene Ontology (BP)","GO:0030838","positive regulation of actin filament po...",55,25,15.52,0.00474
+"topGO","Gene Ontology (BP)","GO:1901652","response to peptide",1275,401,359.81,0.00493
+"topGO","Gene Ontology (BP)","GO:0006120","mitochondrial electron transport, NADH t...",31,16,8.75,0.00499
+"topGO","Gene Ontology (BP)","GO:0050909","sensory perception of taste",75,32,21.17,0.00508
+"topGO","Gene Ontology (BP)","GO:0015669","gas transport",21,12,5.93,0.00509
+"topGO","Gene Ontology (BP)","GO:0031269","pseudopodium assembly",14,9,3.95,0.0053
+"topGO","Gene Ontology (BP)","GO:0007600","sensory perception",2006,616,566.11,0.00545
+"topGO","Gene Ontology (BP)","GO:0050829","defense response to Gram-negative bacter...",120,47,33.86,0.00616
+"topGO","Gene Ontology (BP)","GO:0071107","response to parathyroid hormone",12,8,3.39,0.00631
+"topGO","Gene Ontology (BP)","GO:0048668","collateral sprouting",37,18,10.44,0.00663
+"topGO","Gene Ontology (BP)","GO:1900242","regulation of synaptic vesicle endocytos...",37,18,10.44,0.00663
+"topGO","Gene Ontology (BP)","GO:0009205","purine ribonucleoside triphosphate metab...",279,98,78.74,0.00681
+"topGO","Gene Ontology (BP)","GO:0048671","negative regulation of collateral sprout...",10,7,2.82,0.00733
+"topGO","Gene Ontology (BP)","GO:2000987","positive regulation of behavioral fear r...",10,7,2.82,0.00733
+"topGO","Gene Ontology (BP)","GO:0061734","type 2 mitophagy",17,10,4.8,0.00798
+"topGO","Gene Ontology (BP)","GO:0071732","cellular response to nitric oxide",17,10,4.8,0.00798
+"topGO","Gene Ontology (BP)","GO:0009144","purine nucleoside triphosphate metabolic...",287,100,80.99,0.00816
+"topGO","Gene Ontology (BP)","GO:0031424","keratinization",80,33,22.58,0.00824
+"topGO","Gene Ontology (BP)","GO:0010959","regulation of metal ion transport",429,144,121.07,0.0083
+"topGO","Gene Ontology (BP)","GO:0046034","ATP metabolic process",256,90,72.25,0.00895
+"topGO","Gene Ontology (BP)","GO:0019730","antimicrobial humoral response",178,65,50.23,0.00971
+"topGO","Gene Ontology (BP)","GO:0051412","response to corticosterone",25,13,7.06,0.01022
+"topGO","Gene Ontology (BP)","GO:0006936","muscle contraction",386,130,108.93,0.01036
+"topGO","Gene Ontology (BP)","GO:0051924","regulation of calcium ion transport",283,98,79.86,0.01055
+"topGO","Gene Ontology (BP)","GO:0097154","GABAergic neuron differentiation",20,11,5.64,0.01059
+"topGO","Gene Ontology (BP)","GO:0006959","humoral immune response",290,100,81.84,0.01123
+"topGO","Gene Ontology (BP)","GO:0009152","purine ribonucleotide biosynthetic proce...",173,63,48.82,0.01148
+"topGO","Gene Ontology (BP)","GO:0002227","innate immune response in mucosa",36,17,10.16,0.01179
+"topGO","Gene Ontology (BP)","GO:0010629","negative regulation of gene expression",1592,489,449.27,0.01228
+"topGO","Gene Ontology (BP)","GO:0090281","negative regulation of calcium ion impor...",13,8,3.67,0.01238
+"topGO","Gene Ontology (BP)","GO:0098900","regulation of action potential",82,33,23.14,0.01254
+"topGO","Gene Ontology (BP)","GO:0042756","drinking behavior",26,13,7.34,0.01523
+"topGO","Gene Ontology (BP)","GO:1903367","positive regulation of fear response",11,7,3.1,0.01527
+"topGO","Gene Ontology (BP)","GO:1990034","calcium ion export across plasma membran...",11,7,3.1,0.01527
+"topGO","Gene Ontology (BP)","GO:0061844","antimicrobial humoral immune response me...",135,50,38.1,0.01606
+"topGO","Gene Ontology (BP)","GO:0071361","cellular response to ethanol",37,17,10.44,0.01617
+"topGO","Gene Ontology (BP)","GO:1902600","proton transmembrane transport",160,58,45.15,0.01634
+"topGO","Gene Ontology (BP)","GO:0008038","neuron recognition",54,23,15.24,0.01642
+"topGO","Gene Ontology (BP)","GO:0060074","synapse maturation",54,23,15.24,0.01642
+"topGO","Gene Ontology (BP)","GO:1904064","positive regulation of cation transmembr...",157,57,44.31,0.01662
+"topGO","Gene Ontology (BP)","GO:0071222","cellular response to lipopolysaccharide",307,104,86.64,0.01687
+"topGO","Gene Ontology (BP)","GO:2000822","regulation of behavioral fear response",16,9,4.52,0.01712
+"topGO","Gene Ontology (BP)","GO:0009141","nucleoside triphosphate metabolic proces...",304,103,85.79,0.01725
+"topGO","Gene Ontology (BP)","GO:0060997","dendritic spine morphogenesis",84,33,23.71,0.01851
+"topGO","Gene Ontology (BP)","GO:1902905","positive regulation of supramolecular fi...",183,65,51.64,0.01857
+"topGO","Gene Ontology (BP)","GO:0007218","neuropeptide signaling pathway",118,44,33.3,0.02018
+"topGO","Gene Ontology (BP)","GO:1902170","cellular response to reactive nitrogen s...",19,10,5.36,0.02132
+"topGO","Gene Ontology (BP)","GO:0015671","oxygen transport",14,8,3.95,0.02181
+"topGO","Gene Ontology (BP)","GO:0048672","positive regulation of collateral sprout...",14,8,3.95,0.02181
+"topGO","Gene Ontology (BP)","GO:1903999","negative regulation of eating behavior",14,8,3.95,0.02181
+"topGO","Gene Ontology (BP)","GO:0061001","regulation of dendritic spine morphogene...",67,27,18.91,0.02205
+"topGO","Gene Ontology (BP)","GO:0051926","negative regulation of calcium ion trans...",70,28,19.75,0.02219
+"topGO","Gene Ontology (BP)","GO:0010469","regulation of signaling receptor activit...",79,31,22.29,0.02233
+"topGO","Gene Ontology (BP)","GO:0097061","dendritic spine organization",119,44,33.58,0.02347
+"topGO","Gene Ontology (BP)","GO:0051146","striated muscle cell differentiation",406,133,114.58,0.02427
+"topGO","Gene Ontology (BP)","GO:0046827","positive regulation of protein export fr...",22,11,6.21,0.02494
+"topGO","Gene Ontology (BP)","GO:0042742","defense response to bacterium",413,135,116.55,0.02504
+"topGO","Gene Ontology (BP)","GO:0021549","cerebellum development",132,48,37.25,0.02543
+"topGO","Gene Ontology (BP)","GO:0071219","cellular response to molecule of bacteri...",315,105,88.9,0.02596
+"topGO","Gene Ontology (BP)","GO:1903365","regulation of fear response",17,9,4.8,0.0274
+"topGO","Gene Ontology (BP)","GO:1905664","regulation of calcium ion import across ...",17,9,4.8,0.0274
+"topGO","Gene Ontology (BP)","GO:0034767","positive regulation of monoatomic ion tr...",180,63,50.8,0.02764
+"topGO","Gene Ontology (BP)","GO:0021892","cerebral cortex GABAergic interneuron di...",12,7,3.39,0.02781
+"topGO","Gene Ontology (BP)","GO:0045759","negative regulation of action potential",12,7,3.39,0.02781
+"topGO","Gene Ontology (BP)","GO:0061303","cornea development in camera-type eye",12,7,3.39,0.02781
+"topGO","Gene Ontology (BP)","GO:1902667","regulation of axon guidance",12,7,3.39,0.02781
+"topGO","Gene Ontology (BP)","GO:0051673","disruption of plasma membrane integrity ...",25,12,7.06,0.028
+"topGO","Gene Ontology (BP)","GO:0140975","disruption of cellular anatomical struct...",25,12,7.06,0.028
+"topGO","Gene Ontology (BP)","GO:1900452","regulation of long-term synaptic depress...",25,12,7.06,0.028
+"topGO","Gene Ontology (BP)","GO:0043627","response to estrogen",108,40,30.48,0.02885
+"topGO","Gene Ontology (BP)","GO:0099010","modification of postsynaptic structure",54,22,15.24,0.0321
+"topGO","Gene Ontology (BP)","GO:1901379","regulation of potassium ion transmembran...",72,28,20.32,0.03257
+"topGO","Gene Ontology (BP)","GO:0002329","pre-B cell differentiation",15,8,4.23,0.03535
+"topGO","Gene Ontology (BP)","GO:0038020","insulin receptor recycling",15,8,4.23,0.03535
+"topGO","Gene Ontology (BP)","GO:1905274","regulation of modification of postsynapt...",15,8,4.23,0.03535
+"topGO","Gene Ontology (BP)","GO:0021826","substrate-independent telencephalic tang...",10,6,2.82,0.03547
+"topGO","Gene Ontology (BP)","GO:0021843","substrate-independent telencephalic tang...",10,6,2.82,0.03547
+"topGO","Gene Ontology (BP)","GO:0035332","positive regulation of hippo signaling",23,11,6.49,0.03586
+"topGO","Gene Ontology (BP)","GO:0032273","positive regulation of protein polymeriz...",94,35,26.53,0.03606
+"topGO","Gene Ontology (BP)","GO:0043269","regulation of monoatomic ion transport",528,168,149.01,0.03637
+"topGO","Gene Ontology (BP)","GO:0051209","release of sequestered calcium ion into ...",129,46,36.4,0.03939
+"topGO","Gene Ontology (BP)","GO:0060412","ventricular septum morphogenesis",52,21,14.67,0.03939
+"topGO","Gene Ontology (BP)","GO:0050850","positive regulation of calcium-mediated ...",64,25,18.06,0.03963
+"topGO","Gene Ontology (BP)","GO:0006396","RNA processing",2700,1384,761.96,NA
+"topGO","Gene Ontology (BP)","GO:0022618","protein-RNA complex assembly",890,534,251.16,NA
+"topGO","Gene Ontology (BP)","GO:0071826","protein-RNA complex organization",899,535,253.7,NA
+"topGO","Gene Ontology (BP)","GO:0000244","spliceosomal tri-snRNP complex assembly",519,359,146.47,NA
+"topGO","Gene Ontology (BP)","GO:0000353","formation of quadruple SL/U4/U5/U6 snRNP",483,340,136.31,NA
+"topGO","Gene Ontology (BP)","GO:0000365","mRNA trans splicing, via spliceosome",483,340,136.31,NA
+"topGO","Gene Ontology (BP)","GO:0045291","mRNA trans splicing, SL addition",483,340,136.31,NA
+"topGO","Gene Ontology (BP)","GO:0000387","spliceosomal snRNP assembly",543,367,153.24,NA
+"topGO","Gene Ontology (BP)","GO:0000377","RNA splicing, via transesterification re...",1015,564,286.44,NA
+"topGO","Gene Ontology (BP)","GO:0000398","mRNA splicing, via spliceosome",1015,564,286.44,NA
+"topGO","Gene Ontology (BP)","GO:0000375","RNA splicing, via transesterification re...",1016,564,286.72,NA
+"topGO","Gene Ontology (BP)","GO:0022613","ribonucleoprotein complex biogenesis",1155,596,325.95,NA
+"topGO","Gene Ontology (BP)","GO:0008380","RNA splicing",1166,597,329.05,NA
+"topGO","Gene Ontology (BP)","GO:0006397","mRNA processing",1217,602,343.45,NA
+"topGO","Gene Ontology (BP)","GO:0035195","miRNA-mediated post-transcriptional gene...",386,251,108.93,NA
+"topGO","Gene Ontology (BP)","GO:0035194","regulatory ncRNA-mediated post-transcrip...",398,253,112.32,NA
+"topGO","Gene Ontology (BP)","GO:0016441","post-transcriptional gene silencing",406,254,114.58,NA
+"topGO","Gene Ontology (BP)","GO:0032774","RNA biosynthetic process",5881,2063,1659.66,NA
+"topGO","Gene Ontology (BP)","GO:0016071","mRNA metabolic process",1506,656,425,NA
+"topGO","Gene Ontology (BP)","GO:0031047","regulatory ncRNA-mediated gene silencing",463,264,130.66,NA
+"topGO","Gene Ontology (BP)","GO:0141187","nucleic acid biosynthetic process",5985,2083,1689.01,NA
+"topGO","Gene Ontology (BP)","GO:0010467","gene expression",8574,2848,2419.65,NA
+"topGO","Gene Ontology (BP)","GO:0016070","RNA metabolic process",6103,2107,1722.31,NA
+"topGO","Gene Ontology (BP)","GO:0034654","nucleobase-containing compound biosynthe...",6288,2162,1774.52,NA
+"topGO","Gene Ontology (BP)","GO:0009059","macromolecule biosynthetic process",8996,2928,2538.74,NA
