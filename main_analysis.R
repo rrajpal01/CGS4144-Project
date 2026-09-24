@@ -325,23 +325,19 @@ if (!dir.exists("results")) dir.create("results")
 
 #topGO & Gene Ontology
 
-p_vals <- if ("pvalue" %in% colnames(res_df)) res_df$pvalue else res_df$padj
-gene_names <- gsub("\\..*", "", res_df$gene_symbol)
+p_vals <- res_df$padj
+names(p_vals) <- gsub("\\..*", "", res_df$gene_symbol)
 
-valid_idx <- !is.na(p_vals) & !is.na(gene_names)
+valid_idx <- !is.na(p_vals) & names(p_vals) != ""
 p_vals <- p_vals[valid_idx]
-gene_names <- gene_names[valid_idx]
 
-# Map to Entrez IDs
-entrez_map <- mapIds(org.Mm.eg.db, keys = gene_names, column = "ENTREZID", keytype = "SYMBOL", multiVals = "first")
-
-if (sum(!is.na(entrez_map)) < 10) {
-  entrez_map <- mapIds(org.Mm.eg.db, keys = gene_names, column = "ENTREZID", keytype = "ENSEMBL", multiVals = "first")
-}
+entrez_map <- mapIds(org.Mm.eg.db, keys = names(p_vals), column = "ENTREZID", keytype = "SYMBOL", multiVals = "first")
 
 valid_entrez <- !is.na(entrez_map)
 gene_universe <- p_vals[valid_entrez]
 names(gene_universe) <- entrez_map[valid_entrez]
+
+#Deduplicate
 gene_universe <- tapply(gene_universe, names(gene_universe), min)
 
 top_diff_genes <- function(all_score) {
