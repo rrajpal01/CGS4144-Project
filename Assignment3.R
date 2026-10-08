@@ -463,15 +463,33 @@ for (m_name in names(all_k_lists)) {
   }
 }
 
-# Pairwise Feature Subset Comparisons (10 vs 100, 100 vs 1000, 1000 vs 10000 genes)
-methods_list <- list("K-Means" = kmeans_gene_results, "PAM" = pam_gene_results, "Spectral" = spec_gene_results)
+
+# Pairwise Feature Subset Comparisons
+methods_list <- list(
+  "K-Means" = kmeans_gene_results,
+  "PAM" = pam_gene_results,
+  "Spectral" = spec_gene_results
+)
+
 for (m_name in names(methods_list)) {
   m_res <- methods_list[[m_name]]
-  all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(m_res[["10"]], m_res[["100"]], paste(m_name, "10 vs 100 genes"), m_name, 2, "10_vs_100")
-  all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(m_res[["100"]], m_res[["1000"]], paste(m_name, "100 vs 1000 genes"), m_name, 2, "100_vs_1000")
-  all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(m_res[["1000"]], m_res[["10000"]], paste(m_name, "1000 vs 10000 genes"), m_name, 2, "1000_vs_10000")
-}
 
+  gene_pairs <- combn(as.character(gene_subsets), 2, simplify = FALSE)
+
+  for (pair in gene_pairs) {
+    g1 <- pair[1]
+    g2 <- pair[2]
+
+    all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(
+      m_res[[g1]],
+      m_res[[g2]],
+      paste(m_name, g1, "vs", g2, "genes"),
+      m_name,
+      2,
+      paste0(g1, "_vs_", g2)
+    )
+  }
+}
 # Cross-Method Agreement Comparisons (K-Means vs PAM vs Spectral at k=2, 5000 genes)
 all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(k2_clusters, pam_k2_clusters,  "Inter-Algorithm Comparison: K-Means vs PAM (5000 genes, k=2)",     "K-Means_vs_PAM",     2, 5000)
 all_stats_df[[length(all_stats_df) + 1]] <- run_chisq_test(k2_clusters, spec_k2_clusters, "Inter-Algorithm Comparison: K-Means vs Spectral (5000 genes, k=2)", "K-Means_vs_Spectral", 2, 5000)
