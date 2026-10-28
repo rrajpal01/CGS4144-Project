@@ -1,0 +1,4 @@
+"Comparison","Method","Discordant_A_Correct","Discordant_B_Correct","Raw_P_Value","Adjusted_P_Value"
+"SVM vs LogReg","Exact McNemar",2,6,0.2890625,0.2890625
+"SVM vs KNN","Exact McNemar",16,1,0.000274658203125,0.0004119873046875
+"LogReg vs KNN","Exact McNemar",21,2,6.60419464111328e-05,0.000198125839233398
