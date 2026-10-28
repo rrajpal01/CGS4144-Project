@@ -1,0 +1,13 @@
+"NumGenes","Model","AUC"
+10,"SVM (Age Group)",0.918124041200964
+10,"Logistic Regression (PAM)",0.925805857432306
+10,"KNN (Spectral)",0.763326491260807
+100,"SVM (Age Group)",0.997205785667324
+100,"Logistic Regression (PAM)",0.984539817031987
+100,"KNN (Spectral)",0.795387821110904
+1000,"SVM (Age Group)",1
+1000,"Logistic Regression (PAM)",0.99498986922085
+1000,"KNN (Spectral)",0.765970019282204
+5000,"SVM (Age Group)",1
+5000,"Logistic Regression (PAM)",0.997071283846011
+5000,"KNN (Spectral)",0.749651676307769
